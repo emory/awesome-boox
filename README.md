@@ -59,6 +59,8 @@ You may want to enable the Google Play Store on your Boox to install other softw
 
 Boox has documentation on [permitting Google Play Store](https://help.boox.com/hc/en-us/articles/8569260963732-Google-Play-Store) and you should probably familiarize yourself with the optimization and performance/display improvements for third-party apps like this [guide for optimizing OneNote, Evernote, WPS](https://shop.boox.com/blogs/news/optimize-onenote-evernote-wps).
 
+- [Inkward](https://inkward.life) - reads your handwritten notes and gives back a calm daily, weekly, and monthly reflection of your own words. Syncs natively with reMarkable and Supernote; for a Boox, point it at a cloud folder you export pages to. EU-hosted, GDPR-first.
+
 
 #### Alternative ebook (epub, mobi, pdf, az3) readers and annotators
 
