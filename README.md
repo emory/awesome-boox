@@ -62,7 +62,7 @@ Boox has documentation on [permitting Google Play Store](https://help.boox.com/h
 
 #### Alternative ebook (epub, mobi, pdf, az3) readers and annotators
 
-- 
+- [KOReader](https://github.com/koreader/koreader) is the heavyweight open source document reader for e-ink (PDF, DjVu, EPUB, FB2, CBZ…). It runs on Boox via its Android build, and has a big plugin ecosystem (a few Boox-relevant ones are listed under [Open source projects on GitHub](#open-source-projects-on-github))
 #### Stylus
 
 The eink displays try to recreate familiar concepts and use electromagnetic resonanace (EMR) technology, and it's a patented technology by Wacom, which is obviously the most well-known name in graphics tablets used by creative professionals for decades. They use EMR styluses, so the e-ink displays Boox uses also can use an EMR stylus, and Boox makes and sells a few but some fan favorites worth looking at would include:
@@ -81,6 +81,69 @@ dotgrid or gtfo
 
 ### Paid Templates and Planners
 
+
+## Open source projects on GitHub
+
+Things people have built for (or that work especially well on) a Boox. Star counts drift; activity notes are as of September 2026. Many are small one-person projects, so kick the tires before trusting them with your only copy of anything.
+
+### Official Onyx code
+
+- [onyx-intl/OnyxAndroidDemo](https://github.com/onyx-intl/OnyxAndroidDemo) is Onyx's sample project for their Android SDK: e-ink refresh (EPD) control, raw pen/inking, and device APIs. Start here if you want to write your own Boox app
+- [onyx-intl/boox-opensource](https://github.com/onyx-intl/boox-opensource) holds open source libraries and apps from Onyx. Historical (last touched 2013), but interesting archaeology
+
+### Handwriting, notes, and drawing apps
+
+- [Notate](https://github.com/alexdremov/notate) is a handwritten notes app built specifically for Onyx devices, actively developed
+- [PngNote](https://github.com/karino2/PngNote) is a deliberately minimal note app (pencil, eraser, undo, redo) that stores each page as a plain PNG file, using the Boox SDK's raw drawing mode for low latency
+- [Boox-EinkDraw](https://github.com/steffest/Boox-EinkDraw) is a drawing app that uses the hardware pen path for near-zero latency, with layers and brushes
+
+### Getting notes and highlights off the device
+
+- [boox-note-optimizer](https://github.com/nrontsis/boox-note-optimizer) is a browser-based (runs locally) tool to shrink, preview, and convert `.note` files, including SVG import and PDF/SVG export
+- [boox-notes-sync](https://github.com/bomberstudios/boox-notes-sync) pulls Boox notes out of Dropbox and renders them to PDFs split by day
+- [OnyxNoteRenderer](https://github.com/RobertCsordas/OnyxNoteRenderer) renders PDFs from a Notes backup (a pile of SQLite databases) with stroke smoothing. Older, but documents the format
+- [boox-notes-backup-parser](https://github.com/DAmesberger/boox-notes-backup-parser) reverse-engineers the Notes backup format and extracts pages
+- [BooxRichAnnotations](https://github.com/uroybd/BooxRichAnnotations) exports annotations in multiple formats while keeping book metadata
+- [boox-highlight-manager](https://github.com/wjkba/boox-highlight-manager) is a local-first app for importing and organizing your reading highlights
+- [BooxNotes](https://github.com/DowswellDigital/BooxNotes) watches a synced folder for handwritten-note PDFs and turns them into Markdown summaries (sends your notes to OpenAI, so decide if you're comfortable with that)
+
+#### Obsidian
+
+- [Onyx Boox Annotation & Highlight Extractor](https://github.com/akosbalasko/Onyx-Boox-Annotation-Highlight-Extractor) converts exported reading notes into Zettelkasten-style literature and permanent notes (also available as an Obsidian community plugin)
+- [Boox NeoReader Obsidian Sync](https://github.com/moomtaz/Boox_NeoReader_Obsidian_Sync) imports NeoReader highlights and handwritten notes with YAML metadata, citation styles, and callouts
+- [obsidian-boox-plugin](https://github.com/jiyee/obsidian-boox-plugin) (Boox Highlights Sync) syncs highlights into per-book notes using your send2boox login
+- [obsidian-boox-cloud-sync](https://github.com/Bratet/obsidian-boox-cloud-sync) does one-way sync of BOOX cloud highlights, notebooks, memos, and files into a vault, no extra server needed. Very new
+- [obsidian-boox-sync](https://github.com/sky150/obsidian-boox-sync) incrementally syncs exported PDF/PNG notes over Boox Drop
+- [highlight-to-markdown-OnyxBoox-to-Obsidian](https://github.com/Pandagan-85/highlight-to-markdown-OnyxBoox-to-Obsidian) is a small Python converter from Boox annotations to structured Markdown
+
+### Transferring files
+
+- [pyBooxDrop](https://github.com/filipgodlewski/pyBooxDrop) is a Python wrapper for the Boox Drop API, handy for scripting transfers
+- [BooxDrop](https://github.com/alirezaazadi/BooxDrop) is a third-party library manager (web UI and CLI) that talks to Boox Drop
+- [GenBooks](https://github.com/carey036/GenBooks) builds EPUB/MOBI from RSS feeds with a GitHub Action and sends them to a Kindle or Boox
+
+### Launchers, browsers, and system tweaks
+
+- [EinkBro](https://github.com/plateaukao/einkbro) is a fast Android web browser built for e-ink: no animations, clear black and white UI, reader-mode goodies. Probably the single most useful non-Boox app on this list
+- [inkOS](https://github.com/gezimos/inkOS) is a text-based minimal launcher for e-ink devices (popular on the Palma)
+- [E-Ink-Launcher](https://github.com/Modificator/E-Ink-Launcher) is a launcher designed for e-ink e-readers
+- [eLauncher](https://github.com/thypon/eLauncher) is a tiny (~1MB) readability-first launcher, tested on the Note series
+- [android-eink-launcher](https://github.com/dividing-by-zaro/android-eink-launcher) is a pure black and white home screen for the Boox Palma
+- [OnyxTweaks](https://github.com/timschneeb/OnyxTweaks) is an Xposed module for tweaking Android 12 Boox devices. Requires root, so it is squarely at-your-own-risk
+- [Onyx-Boox-Blocklist](https://github.com/JordanEJ/Onyx-Boox-Blocklist) is a DNS blocklist for Boox telemetry domains (use with Pi-hole, NextDNS, etc.). Blocking the wrong thing can break cloud sync or updates
+- [onyx-boox-screensaver-gol](https://github.com/hbmartin/onyx-boox-screensaver-gol) is a Conway's Game of Life screensaver, because why not
+
+### KOReader plugins worth knowing about
+
+- [derainbowify.koplugin](https://github.com/Euphoriyy/derainbowify.koplugin) reduces the rainbow artifacts on Kaleido 3 color e-ink screens
+- [palmasleepscreen.koplugin](https://github.com/naraxian/palmasleepscreen.koplugin) shows the current book cover as the Boox Palma sleep screen
+
+### Templates, planners, and fonts
+
+- [boox-template-generator](https://github.com/stachuman/boox-template-generator) is a WYSIWYG editor for building your own notebook templates as PDFs, including hyperlinked planners
+- [hyperpaper-planner](https://github.com/af/hyperpaper-planner) is a hyperlinked day-planner PDF for large e-readers
+- [note-taking-templates](https://github.com/Sterh20/note-taking-templates) has note-taking templates and notebook covers for e-ink readers
+- [ebook-fonts](https://github.com/nicoverbruggen/ebook-fonts) is a collection of fonts tuned for e-ink reading on Kobo, Kindle, and Boox
 
 ### Communities and discussions 
 
