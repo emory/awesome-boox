@@ -106,6 +106,7 @@ Things people have built for (or that work especially well on) a Boox. Star coun
 - [BooxRichAnnotations](https://github.com/uroybd/BooxRichAnnotations) exports annotations in multiple formats while keeping book metadata
 - [boox-highlight-manager](https://github.com/wjkba/boox-highlight-manager) is a local-first app for importing and organizing your reading highlights
 - [BooxNotes](https://github.com/DowswellDigital/BooxNotes) watches a synced folder for handwritten-note PDFs and turns them into Markdown summaries (sends your notes to OpenAI, so decide if you're comfortable with that)
+- [screvi-koreader-plugin](https://github.com/screvi/screvi-koreader-plugin) syncs KOReader highlights and notes to [Screvi](https://screvi.com), a paid (not open source) highlights manager with an Android app that runs on Boox, a daily review, and export to Obsidian and Notion
 
 #### Obsidian
 
