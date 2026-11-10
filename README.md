@@ -132,6 +132,7 @@ Things people have built for (or that work especially well on) a Boox. Star coun
 - [OnyxTweaks](https://github.com/timschneeb/OnyxTweaks) is an Xposed module for tweaking Android 12 Boox devices. Requires root, so it is squarely at-your-own-risk
 - [Onyx-Boox-Blocklist](https://github.com/JordanEJ/Onyx-Boox-Blocklist) is a DNS blocklist for Boox telemetry domains (use with Pi-hole, NextDNS, etc.). Blocking the wrong thing can break cloud sync or updates
 - [onyx-boox-screensaver-gol](https://github.com/hbmartin/onyx-boox-screensaver-gol) is a Conway's Game of Life screensaver, because why not
+- [einktools](https://einktools.com/boox-lock-screen) is a browser tool that crops a photo to a Boox panel's exact resolution (Palma, Go, Note Air, Page, Leaf) and exports the PNG for the sleep and power-off screens
 
 ### KOReader plugins worth knowing about
 
