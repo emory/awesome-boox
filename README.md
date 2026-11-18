@@ -22,6 +22,8 @@ Calibre can attach itself to a Boox and manage books on the device.
 
 Boox has a slick service called Boox Drop, that opens an http listener with a simple UI for browser-based drag and drop navigation. Recent versions of the Boox Android distribution have included a background service for 'drop (does impact battery) and the old fashioned way of using Android File Transfer tools from the Android SDK or similar can work as well. 
 
+To get a single web article onto the device, [TabToBook](https://tabtobook.app) is a free Chrome extension that saves the current page as a clean EPUB (images, title, author) that you can then send over with Boox Drop or Calibre. Disclosure: I made it.
+
 On macOS at least, you may want to take care to not allow Android File Transfer intercept the device when you plug it in or Calibre can't see it. I disabled the launchdaemon and launchagents associated with the SDK to stop it from constantly butting in when I was trying to copy more books over.
 
 ### Reading: Books, documents, web
